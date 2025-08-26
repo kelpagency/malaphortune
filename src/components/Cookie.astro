@@ -2,6 +2,8 @@
 import cookie_frame_1 from "../assets/Cookie-1.png";
 import cookie_frame_2 from "../assets/Cookie-2.png";
 import cookie_frame_3 from "../assets/Cookie-3.png";
+
+import BgTexture from "../assets/bg-lines.svg";
 ---
 
 <section class="cookie">
@@ -10,96 +12,19 @@ import cookie_frame_3 from "../assets/Cookie-3.png";
 			Botched wisdom. <br />
 			Deliciously delivered.
 		</h1>
-		<img src={cookie_frame_1.src} alt="Fortune Cookie" loading="lazy" />
+		<img
+			id="cookieImage"
+			src={cookie_frame_1.src}
+			alt="Fortune Cookie"
+			loading="lazy"
+			data-frame2={cookie_frame_2.src}
+			data-frame3={cookie_frame_3.src}
+		/>
 	</div>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 231.9 232.1"
-		width="232"
-		height="232"
-		class="cookie-bg cookie-bg--tr"
-	>
-		<g fill="#ffc136">
-			<path
-				d="M219.1 0h13v143.4a88.6 88.6 0 0 1-88.6 88.5H0V219h143.5a75.7 75.7 0 0 0 75.6-75.6Z"
-				data-name="Path 3123"></path>
-			<path
-				d="M192.2 0h13v141.2a63.3 63.3 0 0 1-63.3 63.3H0v-13h142a50.4 50.4 0 0 0 50.2-50.3Z"
-				data-name="Path 3124"></path>
-			<path
-				d="M165.4 0h13v138.6A38.4 38.4 0 0 1 140 177H0v-13h140a25.4 25.4 0 0 0 25.4-25.4Z"
-				data-name="Path 3125"></path>
-			<path
-				d="M138.5 0h13v137a12.5 12.5 0 0 1-12.6 12.5H0v-13h138.5Z"
-				data-name="Path 3126"></path>
-		</g>
-	</svg>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 231.9 232.1"
-		width="232"
-		height="232"
-		class="cookie-bg cookie-bg--bl"
-	>
-		<g fill="#ffc136">
-			<path
-				d="M219.1 0h13v143.4a88.6 88.6 0 0 1-88.6 88.5H0V219h143.5a75.7 75.7 0 0 0 75.6-75.6Z"
-				data-name="Path 3123"></path>
-			<path
-				d="M192.2 0h13v141.2a63.3 63.3 0 0 1-63.3 63.3H0v-13h142a50.4 50.4 0 0 0 50.2-50.3Z"
-				data-name="Path 3124"></path>
-			<path
-				d="M165.4 0h13v138.6A38.4 38.4 0 0 1 140 177H0v-13h140a25.4 25.4 0 0 0 25.4-25.4Z"
-				data-name="Path 3125"></path>
-			<path
-				d="M138.5 0h13v137a12.5 12.5 0 0 1-12.6 12.5H0v-13h138.5Z"
-				data-name="Path 3126"></path>
-		</g>
-	</svg>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 231.9 232.1"
-		width="232"
-		height="232"
-		class="cookie-bg cookie-bg--tl"
-	>
-		<g fill="#ffc136">
-			<path
-				d="M219.1 0h13v143.4a88.6 88.6 0 0 1-88.6 88.5H0V219h143.5a75.7 75.7 0 0 0 75.6-75.6Z"
-				data-name="Path 3123"></path>
-			<path
-				d="M192.2 0h13v141.2a63.3 63.3 0 0 1-63.3 63.3H0v-13h142a50.4 50.4 0 0 0 50.2-50.3Z"
-				data-name="Path 3124"></path>
-			<path
-				d="M165.4 0h13v138.6A38.4 38.4 0 0 1 140 177H0v-13h140a25.4 25.4 0 0 0 25.4-25.4Z"
-				data-name="Path 3125"></path>
-			<path
-				d="M138.5 0h13v137a12.5 12.5 0 0 1-12.6 12.5H0v-13h138.5Z"
-				data-name="Path 3126"></path>
-		</g>
-	</svg>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		viewBox="0 0 231.9 232.1"
-		width="232"
-		height="232"
-		class="cookie-bg cookie-bg--br"
-	>
-		<g fill="#ffc136">
-			<path
-				d="M219.1 0h13v143.4a88.6 88.6 0 0 1-88.6 88.5H0V219h143.5a75.7 75.7 0 0 0 75.6-75.6Z"
-				data-name="Path 3123"></path>
-			<path
-				d="M192.2 0h13v141.2a63.3 63.3 0 0 1-63.3 63.3H0v-13h142a50.4 50.4 0 0 0 50.2-50.3Z"
-				data-name="Path 3124"></path>
-			<path
-				d="M165.4 0h13v138.6A38.4 38.4 0 0 1 140 177H0v-13h140a25.4 25.4 0 0 0 25.4-25.4Z"
-				data-name="Path 3125"></path>
-			<path
-				d="M138.5 0h13v137a12.5 12.5 0 0 1-12.6 12.5H0v-13h138.5Z"
-				data-name="Path 3126"></path>
-		</g>
-	</svg>
+	<BgTexture class="cookie-bg cookie-bg--tr" />
+	<BgTexture class="cookie-bg cookie-bg--tl" />
+	<BgTexture class="cookie-bg cookie-bg--br" />
+	<BgTexture class="cookie-bg cookie-bg--bl" />
 </section>
 
 <style lang="scss">
@@ -147,4 +72,75 @@ import cookie_frame_3 from "../assets/Cookie-3.png";
 			}
 		}
 	}
+	@keyframes shake {
+		0% {
+			transform: rotate(0deg);
+		}
+		10% {
+			transform: rotate(4deg);
+		}
+		20% {
+			transform: rotate(-4deg);
+		}
+		30% {
+			transform: rotate(4deg);
+		}
+		40% {
+			transform: rotate(-4deg);
+		}
+		50% {
+			transform: rotate(4deg);
+		}
+		60% {
+			transform: rotate(-4deg);
+		}
+		70% {
+			transform: rotate(2deg);
+		}
+		80% {
+			transform: rotate(-2deg);
+		}
+		90% {
+			transform: rotate(1deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	#cookieImage.shake {
+		animation: shake 0.8s ease-in-out;
+	}
 </style>
+
+<script>
+	const cookieImage = document.getElementById("cookieImage");
+
+	const frame2 = cookieImage.dataset.frame2;
+	const frame3 = cookieImage.dataset.frame3;
+
+	let hasAnimated = false;
+
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting && !hasAnimated) {
+					hasAnimated = true;
+					cookieImage.classList.add("shake");
+
+					setTimeout(() => {
+						cookieImage.src = frame2;
+					}, 600);
+
+					setTimeout(() => {
+						cookieImage.src = frame3;
+						cookieImage.classList.remove("shake");
+					}, 1000);
+				}
+			});
+		},
+		{ threshold: 0.5 },
+	);
+
+	observer.observe(document.querySelector(".cookie"));
+</script>
