@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import bagImage from "../assets/Malaphortune-Bag-Mockup-Iso.png";
 import background from "../assets/bg-white.png";
 ---
@@ -17,7 +19,15 @@ import background from "../assets/bg-white.png";
 			<p><a href="#" class="button">Available Soon</a></p>
 		</div>
 		<div class="bag-image">
-			<img src={bagImage.src} loading="lazy" width="812" height="1052" />
+			<Image
+				src={bagImage}
+				alt="Malaphortune Bag of cookies"
+				width={812}
+				height={1052}
+				decoding="async"
+				loading="lazy"
+				layout="constrained"
+			/>
 		</div>
 	</div>
 </section>
